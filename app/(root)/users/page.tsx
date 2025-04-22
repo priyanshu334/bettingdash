@@ -27,7 +27,7 @@ export default function UsersPage() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch('https://backend.nurdcells.com/api/user');
+        const response = await fetch('https://backend.nurdcells.com/api/users');
         if (!response.ok) {
           throw new Error('Failed to fetch users');
         }

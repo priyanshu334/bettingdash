@@ -29,7 +29,7 @@ export default function AddPlayerForm() {
     setSuccess("");
   
     try {
-      const response = await fetch("https://backend.nurdcells.com/api/user/signup", {
+      const response = await fetch("https://backend.nurdcells.com/api/users/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
