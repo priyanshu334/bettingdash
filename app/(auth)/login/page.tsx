@@ -37,7 +37,7 @@ const LoginPage = () => {
       localStorage.setItem('admin_token', data.token);
 
       // Redirect to admin dashboard
-      router.push('/admin/dashboard');
+      router.push('/');
     } catch (err) {
       console.error(err);
       setError('Something went wrong');
