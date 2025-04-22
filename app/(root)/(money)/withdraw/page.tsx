@@ -47,7 +47,7 @@ export default function WithdrawTransaction(): React.ReactElement {
 
     try {
       toast.promise(
-        fetch("https://backend.nurdcells.com/api/user/withdraw-money", {
+        fetch("https://backend.nurdcells.com/api/users/withdraw-money", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -46,7 +46,7 @@ export default function MoneyTransaction(): React.ReactElement {
 
     try {
       toast.promise(
-        fetch("https://backend.nurdcells.com/api/user/add-money", {
+        fetch("https://backend.nurdcells.com/api/users/add-money", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
