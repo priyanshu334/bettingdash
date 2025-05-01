@@ -23,7 +23,7 @@ export default function UserAccountHistoryTable() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get("backend.nurdcells.com/api/users/account-history") // replace with your actual API endpoint
+    axios.get("https://backend.nurdcells.com/api/users/account-history") // replace with your actual API endpoint
       .then(res => setData(res.data))
       .catch(err => console.error(err))
       .finally(() => setLoading(false));
